@@ -3,7 +3,7 @@
 # Project   : Motor-Driver-with-Firebase-and-ESP8266
 # This code will connect to the firebase real time database and create/update a child 'Slider' 
 # and change its value according to the slider value in the app
-#****only draging and releasing the slider by mouse will send data to the database
+#****only dragging and releasing the slider by mouse will send data to the database
 
 import sys
 from PyQt5.QtGui import QIcon
@@ -38,7 +38,7 @@ class Slider(QWidget):
         slider.valueChanged.connect(lcd.display)
 
         self.setFixedSize(400, 200)
-        self.setWindowTitle('Project DLD')
+        self.setWindowTitle('Motor Controller')
         self.setWindowIcon(QIcon('icon.png'))
         self.show()
         
