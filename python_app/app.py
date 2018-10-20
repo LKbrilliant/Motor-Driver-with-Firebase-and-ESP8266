@@ -11,7 +11,7 @@ from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import QSlider, QWidget, QLCDNumber, QApplication, QVBoxLayout
 
 from firebase import firebase
-firebase = firebase.FirebaseApplication('Your_Database_URL_here/')
+firebase = firebase.FirebaseApplication('https://dld-v3.firebaseio.com/')
 firebase.put('/','Slider', 0)  # Initialize the session with value 0 
 
 class Slider(QWidget):
