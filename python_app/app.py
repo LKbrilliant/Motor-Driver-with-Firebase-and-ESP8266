@@ -1,6 +1,7 @@
 # Code by   : LKBrilliant
 # Date      : 19.10.2018
 # Project   : Motor-Driver-with-Firebase-and-ESP8266
+# Python version 3.6.2
 # This code will connect to the firebase real time database and create/update a child 'Slider' 
 # and change its value according to the slider value in the app
 #****only dragging and releasing the slider by mouse will send data to the database
@@ -11,7 +12,7 @@ from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import QSlider, QWidget, QLCDNumber, QApplication, QVBoxLayout
 
 from firebase import firebase
-firebase = firebase.FirebaseApplication('https://dld-v3.firebaseio.com/')
+firebase = firebase.FirebaseApplication('https://dld-v3.firebaseio.com/',None)
 firebase.put('/','Slider', 0)  # Initialize the session with value 0 
 
 class Slider(QWidget):
