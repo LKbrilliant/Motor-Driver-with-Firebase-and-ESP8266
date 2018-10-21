@@ -1,3 +1,7 @@
+// Code by   : LKBrilliant
+// Date      : 21.10.2018
+// Project   : Motor-Driver-with-Firebase-and-ESP8266
+
 #define period 500
 
 #include <ESP8266WiFi.h>
