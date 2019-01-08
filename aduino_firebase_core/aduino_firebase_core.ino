@@ -8,7 +8,7 @@
 #include <FirebaseArduino.h>
 
 // Set these to run example.
-#define FIREBASE_HOST "Your_Project_URL"
+#define FIREBASE_HOST "Your_Project_URL" // "xxxxxx.firebaseio.com" (without the 'https://')
 #define FIREBASE_AUTH "Secret"
 #define WIFI_SSID "SSID"
 #define WIFI_PASSWORD "PASSWORD"
